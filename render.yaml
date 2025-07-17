@@ -1,0 +1,26 @@
+# Exported from Render on 2025-07-17T02:27:16Z
+services:
+- type: web
+  name: n8n
+  runtime: docker
+  repo: https://github.com/TahaTahir45/n8n
+  branch: main
+  plan: free
+  envVars:
+  - key: WEBHOOK_TUNNEL_URL
+    sync: false
+  - key: N8N_BASIC_AUTH_USER
+    sync: false
+  - key: N8N_PORT
+    sync: false
+  - key: N8N_HOST
+    sync: false
+  - key: N8N_BASIC_AUTH_PASSWORD
+    sync: false
+  - key: N8N_BASIC_AUTH_ACTIVE
+    sync: false
+  region: oregon
+  dockerContext: .
+  dockerfilePath: ./Dockerfile
+  autoDeployTrigger: commit
+version: "1"
