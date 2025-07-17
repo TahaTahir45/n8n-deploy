@@ -1,4 +1,3 @@
-# Exported from Render on 2025-07-17T02:27:16Z
 services:
 - type: web
   name: n8n
@@ -8,17 +7,17 @@ services:
   plan: free
   envVars:
   - key: WEBHOOK_TUNNEL_URL
-    sync: false
+    value: "https://fuelprice.onrender.com/"
   - key: N8N_BASIC_AUTH_USER
-    sync: false
-  - key: N8N_PORT
-    sync: false
-  - key: N8N_HOST
-    sync: false
+    value: "admin"
   - key: N8N_BASIC_AUTH_PASSWORD
-    sync: false
+    value: "fuel123"
   - key: N8N_BASIC_AUTH_ACTIVE
-    sync: false
+    value: "true"
+  - key: N8N_PORT
+    value: "5678"
+  - key: N8N_HOST
+    value: "0.0.0.0"
   region: oregon
   dockerContext: .
   dockerfilePath: ./Dockerfile
